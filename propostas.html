@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e6e8eb",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "tertiary-fixed-dim": "#e5c18a",
+                        "on-secondary-fixed-variant": "#92001b",
+                        "secondary": "#ba0627",
+                        "outline": "#75777e",
+                        "on-secondary-container": "#fffbff",
+                        "surface-tint": "#4e5f7e",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#374765",
+                        "primary-fixed-dim": "#b6c7eb",
+                        "tertiary-fixed": "#ffdead",
+                        "on-primary-container": "#8293b5",
+                        "tertiary": "#211400",
+                        "primary": "#031632",
+                        "on-primary-fixed": "#081b38",
+                        "on-surface-variant": "#44474d",
+                        "primary-container": "#1a2b48",
+                        "outline-variant": "#c5c6ce",
+                        "inverse-surface": "#2d3133",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#5b4217",
+                        "tertiary-container": "#3c2700",
+                        "primary-fixed": "#d7e2ff",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#de2c3c",
+                        "surface-bright": "#f7f9fc",
+                        "surface-variant": "#e0e3e6",
+                        "on-secondary-fixed": "#410007",
+                        "surface": "#f7f9fc",
+                        "on-tertiary-container": "#ad8d5b",
+                        "surface-container-highest": "#e0e3e6",
+                        "inverse-on-surface": "#eff1f4",
+                        "secondary-fixed": "#ffdad8",
+                        "surface-container-low": "#f2f4f7",
+                        "inverse-primary": "#b6c7eb",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f7f9fc",
+                        "on-background": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eceef1",
+                        "on-tertiary-fixed": "#281900",
+                        "on-error": "#ffffff",
+                        "on-surface": "#191c1e",
+                        "surface-dim": "#d8dadd",
+                        "on-tertiary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-newsreader font-bold italic text-blue-950 dark:text-white">
+David Ribeiro
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-900 dark:text-blue-100 font-bold pb-1 text-sm font-medium Inter" href="./index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 text-sm font-medium Inter transition-colors" href="./quem-sou.html">Quem Sou</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 border-b-2 border-red-700 text-sm font-medium Inter transition-colors" href="./propostas.html">Propostas</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 text-sm font-medium Inter transition-colors" href="./noticias.html">Notícias</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 text-sm font-medium Inter transition-colors" href="./contato.html">Contato</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-all scale-95 duration-200 ease-in-out">
+                Participe
+            </button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section: Editorial Header -->
+<header class="relative overflow-hidden bg-gradient-to-br from-primary to-primary-container py-24 md:py-32 px-6">
+<div class="max-w-7xl mx-auto relative z-10">
+<span class="text-on-primary-container font-inter text-xs uppercase tracking-widest mb-4 block">Compromisso e Visão</span>
+<h1 class="text-on-primary font-headline text-5xl md:text-7xl font-bold tracking-tight max-w-4xl leading-[1.1] italic">
+                    Propostas e Bandeiras para um Futuro de Autoridade.
+                </h1>
+<div class="mt-12 h-1 w-24 bg-secondary"></div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none select-none">
+<div class="w-full h-full bg-surface-container-highest transform skew-x-12 translate-x-20"></div>
+</div>
+</header>
+<!-- Main Content: Bento Grid of Proposals -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Category Sidebar: Filter Logic -->
+<aside class="md:col-span-3 sticky top-32 space-y-8">
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-newsreader text-xl text-primary font-bold mb-6">Categorias</h3>
+<nav class="space-y-4">
+<button class="flex items-center gap-3 w-full text-left p-3 bg-surface-container-lowest text-primary font-semibold rounded-lg shadow-sm border-l-4 border-secondary">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-inter text-sm">Economia</span>
+</button>
+<button class="flex items-center gap-3 w-full text-left p-3 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span class="font-inter text-sm">Educação</span>
+</button>
+<button class="flex items-center gap-3 w-full text-left p-3 text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors">
+<span class="material-symbols-outlined" data-icon="foundation">foundation</span>
+<span class="font-inter text-sm">Infraestrutura</span>
+</button>
+</nav>
+</div>
+</aside>
+<!-- Proposal Grid -->
+<div class="md:col-span-9">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Proposal Card 1 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-between group hover:bg-surface-container-low transition-all duration-300">
+<div>
+<div class="w-12 h-12 flex items-center justify-center bg-primary-container text-on-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="trending_up">trending_up</span>
+</div>
+<h2 class="font-newsreader text-2xl font-bold text-primary mb-4 leading-tight">Reforma Tributária e Estímulo ao Empreendedorismo</h2>
+<p class="text-on-surface-variant font-inter text-sm leading-relaxed mb-8">
+                                    Uma proposta robusta para simplificar a carga tributária sobre pequenas empresas e incentivar a criação de novos postos de trabalho através de isenções estratégicas.
+                                </p>
+</div>
+<div class="flex items-center justify-between border-t border-surface-container-high pt-6">
+<span class="text-xs font-inter font-bold uppercase tracking-widest text-secondary">Economia</span>
+<a class="flex items-center gap-2 text-primary font-bold font-inter text-sm group-hover:gap-4 transition-all" href="#">
+                                    LEIA O PDF
+                                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Proposal Card 2 -->
+<div class="bg-surface-container-lowest p-8 flex flex-col justify-between group hover:bg-surface-container-low transition-all duration-300">
+<div>
+<div class="w-12 h-12 flex items-center justify-center bg-primary-container text-on-primary mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="architecture">architecture</span>
+</div>
+<h2 class="font-newsreader text-2xl font-bold text-primary mb-4 leading-tight">Modernização da Infraestrutura Urbana</h2>
+<p class="text-on-surface-variant font-inter text-sm leading-relaxed mb-8">
+                                    Investimento massivo em transporte público inteligente e revitalização de centros históricos para devolver a cidade aos cidadãos.
+                                </p>
+</div>
+<div class="flex items-center justify-between border-t border-surface-container-high pt-6">
+<span class="text-xs font-inter font-bold uppercase tracking-widest text-secondary">Infraestrutura</span>
+<a class="flex items-center gap-2 text-primary font-bold font-inter text-sm group-hover:gap-4 transition-all" href="#">
+                                    LEIA O PDF
+                                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Proposal Card 3 (Asymmetric Layout - Spans 2) -->
+<div class="lg:col-span-2 bg-primary p-12 text-on-primary relative overflow-hidden group">
+<div class="relative z-10 max-w-2xl">
+<div class="w-16 h-1 bg-secondary mb-8"></div>
+<h2 class="font-newsreader text-4xl font-bold mb-6 italic">Pacto pela Educação do Século XXI</h2>
+<p class="font-inter text-on-primary-container text-lg leading-relaxed mb-8">
+                                    Nossa maior bandeira: a reformulação do currículo básico integrando tecnologia, pensamento crítico e preparação para o mercado global. Escolas em tempo integral com infraestrutura digital de ponta.
+                                </p>
+<button class="bg-secondary text-on-secondary px-8 py-3 font-bold font-inter text-sm flex items-center gap-3 hover:scale-105 transition-transform">
+                                    VER DETALHES DO PROJETO
+                                    <span class="material-symbols-outlined" data-icon="download">download</span>
+</button>
+</div>
+<div class="absolute right-[-10%] bottom-[-20%] opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[300px] leading-none" data-icon="school">school</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Policy Pull-Quote Component -->
+<section class="bg-surface-container-highest py-32 px-6 text-center">
+<div class="max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8" data-icon="format_quote" data-weight="fill" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-newsreader text-3xl md:text-5xl font-bold text-primary italic leading-tight">
+                    "A política não é o lugar da conveniência, mas o solo sagrado onde cultivamos o futuro das próximas gerações através de propostas concretas."
+                </blockquote>
+<p class="mt-8 font-inter text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant">— Manifesto da Autoridade</p>
+</div>
+</section>
+<!-- Participation Form -->
+<section class="py-24 px-6 max-w-5xl mx-auto">
+<div class="bg-white p-12 shadow-sm border-t-8 border-primary">
+<div class="mb-12">
+<h2 class="font-newsreader text-4xl font-bold text-primary mb-4">Sugira uma Proposta</h2>
+<p class="text-on-surface-variant font-inter max-w-2xl">Sua voz é o pilar deste projeto. Utilize o formulário abaixo para enviar sua contribuição técnica ou necessidade comunitária diretamente para nossa equipe de análise.</p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-6">
+<div class="group">
+<label class="block font-inter text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Nome Completo</label>
+<input class="w-full bg-surface-variant border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-inter py-3 px-0" placeholder="Ex: João Silva" type="text"/>
+</div>
+<div class="group">
+<label class="block font-inter text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">E-mail para Contato</label>
+<input class="w-full bg-surface-variant border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-inter py-3 px-0" placeholder="contato@exemplo.com" type="email"/>
+</div>
+<div class="group">
+<label class="block font-inter text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Eixo Temático</label>
+<select class="w-full bg-surface-variant border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-inter py-3 px-0">
+<option>Economia</option>
+<option>Educação</option>
+<option>Saúde</option>
+<option>Infraestrutura</option>
+<option>Outros</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="block font-inter text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Descrição da Proposta</label>
+<textarea class="flex-grow w-full bg-surface-variant border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-all font-inter py-3 px-0 resize-none" placeholder="Descreva os objetivos e impactos esperados..." rows="8"></textarea>
+</div>
+<div class="md:col-span-2 flex justify-end">
+<button class="bg-secondary text-on-secondary px-12 py-4 font-bold font-inter tracking-widest flex items-center gap-4 hover:bg-red-800 transition-colors" type="submit">
+                            ENVIAR SUGESTÃO
+                            <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-blue-950 dark:bg-black w-full pt-16 pb-8">
+<div class="w-full px-8 grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="font-newsreader text-xl text-white">David Ribeiro</div>
+<p class="text-slate-400 font-inter text-xs leading-relaxed">
+                    Compromisso com a verdade e a excelência institucional. Uma nova era para a gestão pública orientada por resultados.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-inter text-xs uppercase tracking-widest font-bold">Navegação</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-400 hover:text-white font-inter text-xs uppercase tracking-widest transition-colors" href="#">Home</a>
+<a class="text-slate-400 hover:text-white font-inter text-xs uppercase tracking-widest transition-colors" href="#">Propostas</a>
+<a class="text-slate-400 hover:text-white font-inter text-xs uppercase tracking-widest transition-colors" href="#">Notícias</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-inter text-xs uppercase tracking-widest font-bold">Documentos</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-400 hover:text-white font-inter text-xs uppercase tracking-widest transition-colors" href="#">Privacidade</a>
+<a class="text-slate-400 hover:text-white font-inter text-xs uppercase tracking-widest transition-colors" href="#">Termos</a>
+<a class="text-slate-400 hover:text-white font-inter text-xs uppercase tracking-widest transition-colors" href="#">Newsletter</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-white font-inter text-xs uppercase tracking-widest font-bold">Social</h4>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-white transition-opacity opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="text-slate-400 hover:text-white transition-opacity opacity-80 hover:opacity-100" href="#">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-400 font-inter text-xs uppercase tracking-widest">
+                    © 2026 David Ribeiro. Todos os direitos reservados.
+                </p>
+<div class="flex gap-8">
+<a class="text-slate-400 hover:text-white font-inter text-xs uppercase tracking-widest" href="#">Contato</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-container": "#ffdad6",
+              "surface-container-high": "#e6e8eb",
+              "secondary-fixed-dim": "#ffb3b1",
+              "tertiary-fixed-dim": "#e5c18a",
+              "on-secondary-fixed-variant": "#92001b",
+              "secondary": "#ba0627",
+              "outline": "#75777e",
+              "on-secondary-container": "#fffbff",
+              "surface-tint": "#4e5f7e",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#374765",
+              "primary-fixed-dim": "#b6c7eb",
+              "tertiary-fixed": "#ffdead",
+              "on-primary-container": "#8293b5",
+              "tertiary": "#211400",
+              "primary": "#031632",
+              "on-primary-fixed": "#081b38",
+              "on-surface-variant": "#44474d",
+              "primary-container": "#1a2b48",
+              "outline-variant": "#c5c6ce",
+              "inverse-surface": "#2d3133",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#5b4217",
+              "tertiary-container": "#3c2700",
+              "primary-fixed": "#d7e2ff",
+              "error": "#ba1a1a",
+              "secondary-container": "#de2c3c",
+              "surface-bright": "#f7f9fc",
+              "surface-variant": "#e0e3e6",
+              "on-secondary-fixed": "#410007",
+              "surface": "#f7f9fc",
+              "on-tertiary-container": "#ad8d5b",
+              "surface-container-highest": "#e0e3e6",
+              "inverse-on-surface": "#eff1f4",
+              "secondary-fixed": "#ffdad8",
+              "surface-container-low": "#f2f4f7",
+              "inverse-primary": "#b6c7eb",
+              "surface-container-lowest": "#ffffff",
+              "background": "#f7f9fc",
+              "on-background": "#191c1e",
+              "on-secondary": "#ffffff",
+              "surface-container": "#eceef1",
+              "on-tertiary-fixed": "#281900",
+              "on-error": "#ffffff",
+              "on-surface": "#191c1e",
+              "surface-dim": "#d8dadd",
+              "on-tertiary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 sticky z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md transition-colors duration-200">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-newsreader font-bold italic text-blue-950 dark:text-white">
+                David Ribeiro
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-900 dark:text-blue-100 font-bold pb-1 text-sm font-medium Inter" href="./index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 border-b-2 border-red-700 dark:hover:text-blue-100 text-sm font-medium Inter transition-colors" href="./quem-sou.html">Quem Sou</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 text-sm font-medium Inter transition-colors" href="./propostas.html">Propostas</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 text-sm font-medium Inter transition-colors" href="./noticias.html">Notícias</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 text-sm font-medium Inter transition-colors" href="./contato.html">Contato</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-md font-medium text-sm transition-all hover:opacity-90 active:scale-95 duration-200 ease-in-out">
+                Participe
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section: Biography Intro -->
+<section class="relative pt-20 pb-32 overflow-hidden bg-gradient-to-br from-primary to-primary-container">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-4 py-1 mb-6 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-xs font-bold tracking-widest uppercase">Biografia Oficial</span>
+<h1 class="text-6xl md:text-8xl font-newsreader font-bold text-on-primary tracking-tight leading-none mb-8">
+                        Liderança com <br/><span class="italic text-secondary-fixed">Propósito.</span>
+</h1>
+<p class="text-xl text-on-primary-container max-w-xl font-body leading-relaxed mb-10">
+                        Uma trajetória dedicada à excelência no serviço público, pautada pela transparência e pela construção de um futuro fundamentado em valores sólidos.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-md font-semibold text-sm flex items-center gap-2 hover:bg-secondary/90 transition-all">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                            Baixar CV Completo
+                        </button>
+<button class="bg-transparent border border-outline-variant text-on-primary px-8 py-4 rounded-md font-semibold text-sm hover:bg-white/10 transition-all">
+                            Ver Minhas Propostas
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl bg-surface-container-high border-8 border-white/5">
+<img alt="Retrato Profissional" class="w-full h-full object-cover" data-alt="Professional portrait of David Ribeiro, a middle-aged statesman in a suit." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuqlsPvtQADl8HUiZAFWtAmuIOJ1HQl1rQkJb27hNARMoN-6hd9hzMUj85SrCWIw3JHycnIiR0ial6Gjc9e2gt7L3OARcER5ZseEgCs1JdtkFcWtAjK-ERrbPA_7uwKW9NmhSp2bvnFsU2zHvGoIy_hBf_mORkCzlcwroWxk0k_-6SG8mzvXDr_yAlolbEpTQbSwkaw7Zj0zL4ZaQYvG4SboDygdukX1vJ-lPRm-wuLJyKXA8xLLKs7CdGXUslKNNkYN8QNHE_Izk"/>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 bg-secondary p-8 rounded-lg shadow-xl hidden md:block">
+<p class="text-on-secondary font-newsreader text-2xl italic">"Compromisso real com a mudança."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-newsreader font-bold text-primary mb-6">Meus Valores</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">A política deve ser o reflexo da ética individual aplicada ao coletivo. Estes são os pilares que sustentam cada decisão que tomo e cada projeto que lidero.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Value Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:bg-white shadow-sm">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="gavel">gavel</span>
+</div>
+<h3 class="text-2xl font-newsreader font-bold text-primary mb-4">Integridade Inegociável</h3>
+<p class="text-on-surface-variant leading-relaxed">A transparência absoluta é o único caminho para restaurar a confiança pública nas instituições governamentais.</p>
+</div>
+<!-- Value Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:bg-white shadow-sm">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="groups">groups</span>
+</div>
+<h3 class="text-2xl font-newsreader font-bold text-primary mb-4">Diálogo Democrático</h3>
+<p class="text-on-surface-variant leading-relaxed">Ouvir todas as vozes é fundamental para construir soluções que atendam à complexidade da nossa sociedade.</p>
+</div>
+<!-- Value Card 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:bg-white shadow-sm">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="trending_up">trending_up</span>
+</div>
+<h3 class="text-2xl font-newsreader font-bold text-primary mb-4">Inovação e Gestão</h3>
+<p class="text-on-surface-variant leading-relaxed">Aplicar técnicas modernas de gestão para garantir que o recurso público seja utilizado com máxima eficiência.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section (Minha Trajetória) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4 lg:sticky lg:top-32 h-fit">
+<h2 class="text-5xl font-newsreader font-bold text-primary mb-6">Minha <br/>Trajetória</h2>
+<div class="w-20 h-1 bg-secondary mb-8"></div>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            Duas décadas de experiência unindo o setor privado à gestão pública de alto impacto.
+                        </p>
+<div class="bg-surface-container-high p-8 rounded-lg">
+<p class="text-sm font-bold uppercase tracking-widest text-primary mb-4">Resumo Executivo</p>
+<ul class="space-y-4 text-on-surface">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                    Mestre em Políticas Públicas
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                    10+ Anos de Gestão Executiva
+                                </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="check_circle">check_circle</span>
+                                    Conselheiro Estratégico
+                                </li>
+</ul>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-16">
+<!-- Timeline Item 1 -->
+<div class="relative pl-12 border-l-2 border-outline-variant">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-secondary border-4 border-surface"></div>
+<span class="text-secondary font-bold text-sm tracking-widest uppercase">2018 — Presente</span>
+<h3 class="text-3xl font-newsreader font-bold text-primary mt-2 mb-4">Secretário de Desenvolvimento Estratégico</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                                Liderança da reforma administrativa que resultou em uma economia de 15% nos gastos públicos sem comprometer a qualidade dos serviços essenciais. Implementação do programa de digitalização governamental.
+                            </p>
+<div class="grid grid-cols-2 gap-4">
+<img alt="Governo Office" class="rounded-lg shadow-md aspect-video object-cover" data-alt="Modern government office interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-3AWKpfB5-Eckfkl7rQ6pY2i7ilzvhoHfLXsVYRF7GiN-E-61kHrk0fvKquIuiUz5Y_5zanIUBC_PFKHHW8oaKPRJARBM3tmxICN4CVj1aWJwvZFDy9WCFAPmoX_vfeaOB1Bg6LiugwlIluI1u7K1sSsyngmmwCUipcjJ8nhcCdHv6z2SaWVhOSZHSzU-QYc1gzr4aZoAHzW-MhMXwD7LAHrIWAC5x26mreg46HQx3YVR-ZSVvTS_xUn6kGjkH8pEGJcQIBBbn04"/>
+<img alt="Meeting" class="rounded-lg shadow-md aspect-video object-cover" data-alt="Professional meeting around a table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Hfuf3u6OidYTZsWlHIiBYe5TwA1dPfPGqJOvDKb05lMqup_m7oYhvAQmNYeEWHfuOxVPKtcDN7gVexqtFpslG_l1DCvqCGGJEhLQy69N4gULr0oRu5iOHdVwA6uStrJJKB42BZuEDwCuqWTE-_FSJhxY9Vfq3gjCq_ldQAdXqilCRl_Yg25m3jY8PhOPphk3XrgdQFIfu8ZCkTHfgfu9QtpzbDd8udl0CxLTww9dEfmwine_b9Bc6Oli4-GUVyZcP6qMjCvELxg"/>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative pl-12 border-l-2 border-outline-variant">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-primary border-4 border-surface"></div>
+<span class="text-on-surface-variant font-bold text-sm tracking-widest uppercase">2012 — 2017</span>
+<h3 class="text-3xl font-newsreader font-bold text-primary mt-2 mb-4">Diretor Executivo na Iniciativa Global</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                Coordenação de projetos de infraestrutura sustentável em parceria com ONGs internacionais. Foco em soluções de mobilidade urbana e energia limpa para cidades em crescimento.
+                            </p>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative pl-12 border-l-2 border-outline-variant">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-primary border-4 border-surface"></div>
+<span class="text-on-surface-variant font-bold text-sm tracking-widest uppercase">2006 — 2011</span>
+<h3 class="text-3xl font-newsreader font-bold text-primary mt-2 mb-4">Consultoria Jurídica &amp; Advocacy</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                Atuação na defesa de direitos civis e transparência legislativa. Publicação de diversos artigos acadêmicos sobre o papel do Estado na economia moderna.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Policy Quote Section -->
+<section class="py-32 bg-surface-container-highest">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8" data-icon="format_quote" data-weight="fill" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h2 class="text-4xl md:text-5xl font-newsreader italic font-bold text-primary leading-tight mb-12">
+                    "Minha missão não é apenas ocupar um cargo, mas transformar a forma como as pessoas se relacionam com o poder público. A autoridade deve ser exercida com humildade e visão."
+                </h2>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-secondary mb-4">
+<img alt="Avatar" class="w-full h-full object-cover" data-alt="Small profile portrait of David Ribeiro." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuqlsPvtQADl8HUiZAFWtAmuIOJ1HQl1rQkJb27hNARMoN-6hd9hzMUj85SrCWIw3JHycnIiR0ial6Gjc9e2gt7L3OARcER5ZseEgCs1JdtkFcWtAjK-ERrbPA_7uwKW9NmhSp2bvnFsU2zHvGoIy_hBf_mORkCzlcwroWxk0k_-6SG8mzvXDr_yAlolbEpTQbSwkaw7Zj0zL4ZaQYvG4SboDygdukX1vJ-lPRm-wuLJyKXA8xLLKs7CdGXUslKNNkYN8QNHE_Izk"/>
+</div>
+<p class="font-bold text-primary uppercase tracking-widest text-sm">Candidato The Statesman</p>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-4xl md:text-6xl font-newsreader font-bold mb-8">Quer saber mais sobre minhas ideias?</h2>
+<p class="text-xl text-on-primary-container max-w-2xl mx-auto mb-12">
+                    A transparência é o nosso primeiro passo. Acesse o plano de governo completo e veja como pretendemos transformar nossa realidade.
+                </p>
+<div class="flex justify-center gap-6">
+<button class="bg-secondary text-on-secondary px-10 py-5 rounded-md font-bold text-lg hover:scale-105 transition-transform duration-200">
+                        Ver Plano de Governo
+                    </button>
+<button class="bg-white/10 text-on-primary px-10 py-5 rounded-md font-bold text-lg backdrop-blur-md hover:bg-white/20 transition-all">
+                        Fale Conosco
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-blue-950 dark:bg-black text-white">
+<div class="w-full px-8 grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="font-newsreader text-xl text-white">David Ribeiro's Ledger</div>
+<p class="text-slate-400 font-inter text-sm normal-case opacity-80 leading-relaxed">
+                    Compromisso com a verdade, a ética e o futuro da nossa nação.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="font-inter text-xs uppercase tracking-widest text-secondary-fixed">Navegação</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors font-inter text-xs uppercase tracking-widest" href="#">Início</a></li>
+<li><a class="text-red-500 font-inter text-xs uppercase tracking-widest" href="#">Quem Sou</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-inter text-xs uppercase tracking-widest" href="#">Agenda</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-inter text-xs uppercase tracking-widest" href="#">Prensa</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-inter text-xs uppercase tracking-widest text-secondary-fixed">Documentos</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white transition-colors font-inter text-xs uppercase tracking-widest" href="#">Privacidade</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-inter text-xs uppercase tracking-widest" href="#">Termos</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-inter text-xs uppercase tracking-widest" href="#">Newsletter</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors font-inter text-xs uppercase tracking-widest" href="#">Contato</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-inter text-xs uppercase tracking-widest text-secondary-fixed">Redes Sociais</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/10 text-center">
+<p class="font-inter text-xs uppercase tracking-widest text-slate-400">
+                © 2024 David Ribeiro's Ledger. Todos os direitos reservados.
+            </p>
+</div>
+</footer>
+</body></html>
