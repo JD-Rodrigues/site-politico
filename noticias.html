@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-container": "#ffdad6",
+              "surface-container-high": "#e6e8eb",
+              "secondary-fixed-dim": "#ffb3b1",
+              "tertiary-fixed-dim": "#e5c18a",
+              "on-secondary-fixed-variant": "#92001b",
+              "secondary": "#ba0627",
+              "outline": "#75777e",
+              "on-secondary-container": "#fffbff",
+              "surface-tint": "#4e5f7e",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#374765",
+              "primary-fixed-dim": "#b6c7eb",
+              "tertiary-fixed": "#ffdead",
+              "on-primary-container": "#8293b5",
+              "tertiary": "#211400",
+              "primary": "#031632",
+              "on-primary-fixed": "#081b38",
+              "on-surface-variant": "#44474d",
+              "primary-container": "#1a2b48",
+              "outline-variant": "#c5c6ce",
+              "inverse-surface": "#2d3133",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed-variant": "#5b4217",
+              "tertiary-container": "#3c2700",
+              "primary-fixed": "#d7e2ff",
+              "error": "#ba1a1a",
+              "secondary-container": "#de2c3c",
+              "surface-bright": "#f7f9fc",
+              "surface-variant": "#e0e3e6",
+              "on-secondary-fixed": "#410007",
+              "surface": "#f7f9fc",
+              "on-tertiary-container": "#ad8d5b",
+              "surface-container-highest": "#e0e3e6",
+              "inverse-on-surface": "#eff1f4",
+              "secondary-fixed": "#ffdad8",
+              "surface-container-low": "#f2f4f7",
+              "inverse-primary": "#b6c7eb",
+              "surface-container-lowest": "#ffffff",
+              "background": "#f7f9fc",
+              "on-background": "#191c1e",
+              "on-secondary": "#ffffff",
+              "surface-container": "#eceef1",
+              "on-tertiary-fixed": "#281900",
+              "on-error": "#ffffff",
+              "on-surface": "#191c1e",
+              "surface-dim": "#d8dadd",
+              "on-tertiary": "#ffffff"
+            },
+            fontFamily: {
+              "newsreader": ["Newsreader", "serif"],
+              "inter": ["Inter", "sans-serif"],
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30">
+<!-- TopNavBar Component -->
+<nav class="docked full-width top-0 sticky z-50 bg-slate-50/80 dark:bg-slate-950/80 backdrop-blur-md transition-colors duration-200 ease-in-out">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-newsreader font-bold italic text-blue-950 dark:text-white" href="#">David Ribeiro</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-blue-900 dark:text-blue-100 font-bold pb-1 text-sm font-medium Inter" href="./index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors text-sm font-medium Inter" href="./index.html">Quem Sou</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors text-sm font-medium Inter" href="./propostas.html">Propostas</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 border-b-2 border-red-700 dark:hover:text-blue-100 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors text-sm font-medium Inter" href="./noticias.html">Notícias</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-100 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 transition-colors text-sm font-medium Inter" href="./contato.html">Contato</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-md font-medium text-sm hover:opacity-90 transition-all scale-95 duration-200 ease-in-out">Participe</button>
+</div>
+</div>
+</nav>
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row min-h-screen">
+<!-- SideNavBar Component (Content Filters) -->
+<aside class="hidden lg:flex flex-col p-6 gap-y-4 h-full w-64 bg-slate-50 dark:bg-slate-950 sticky top-20 border-r-0">
+<div class="mb-8">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-sm">auto_stories</span>
+</div>
+<span class="font-newsreader text-lg text-blue-950 font-bold">Filtros de Conteúdo</span>
+</div>
+<p class="font-inter text-xs tracking-wide text-slate-500 dark:text-slate-400">Explore nossa autoridade editorial</p>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 p-3 bg-white dark:bg-blue-900/20 text-blue-900 dark:text-blue-100 font-semibold rounded-lg transition-all duration-300 font-inter text-sm tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+                    Categorias
+                </a>
+<a class="flex items-center gap-3 p-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-300 font-inter text-sm tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+                    Populares
+                </a>
+<a class="flex items-center gap-3 p-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-300 font-inter text-sm tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+                    Busca
+                </a>
+<a class="flex items-center gap-3 p-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-300 font-inter text-sm tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+                    Arquivos
+                </a>
+<a class="flex items-center gap-3 p-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-all duration-300 font-inter text-sm tracking-wide" href="#">
+<span class="material-symbols-outlined" data-icon="sell">sell</span>
+                    Tags
+                </a>
+</nav>
+<div class="mt-auto p-4 bg-surface-container-low rounded-xl">
+<h4 class="font-newsreader font-bold text-primary mb-2">Newsletter</h4>
+<p class="text-xs text-on-surface-variant mb-4">Receba análises profundas no seu e-mail.</p>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-0 border-b-2 border-outline-variant focus:border-primary focus:ring-0 text-xs py-2 transition-all" placeholder="Seu e-mail" type="email"/>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 bg-surface-container-low min-w-0">
+<!-- Hero Featured Story -->
+<section class="relative group">
+<div class="aspect-[21/9] w-full overflow-hidden bg-primary relative">
+<img alt="Capital Building in Sunset" class="w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105" data-alt="Distant view of a majestic government dome building at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXK5bfZ7XY7LQBLa9XIsvxYaMXysRKl6DXsZgnzFVdOCKrJG_G9YWR-RP2-cVX1rPDgwCJpXK9rx-u7SqT-kirU61lFU6ULR0Lkg1V6lYepE3fhntCX1iYDGALlWEM8KFMaAjmIEzwHy9gTnDVNC_5HyYbqy3MqWX4LJxrXMxV_Qk76jvhB5Scg689Hw7hn1n7pKjY5h6IzAqvCTbewKXGU7EJtrRNACtQ5zYImdcJiB03xBdy1g4tjhvzjOI1Bb29CjtDhTrxXQo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-16 max-w-4xl">
+<span class="inline-block bg-secondary text-on-secondary px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">Nacional</span>
+<h1 class="text-white font-newsreader text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6 italic">
+                            A Nova Diplomacia: Como o Diálogo Institucional Está Redefinindo as Alianças de Poder.
+                        </h1>
+<p class="text-slate-300 font-inter text-lg md:text-xl max-w-2xl leading-relaxed">
+                            Uma análise exclusiva sobre as movimentações de bastidores que buscam estabilidade econômica em meio à crescente polarização global.
+                        </p>
+</div>
+</div>
+</section>
+<!-- Content Grid (Secondary News) -->
+<div class="p-8 md:p-12 space-y-16">
+<!-- Category Section: Local & National -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- National Item -->
+<article class="space-y-4">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="Scales of justice on a wooden desk with law books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBon1vDqCIUSzSU3b5tI_uBEdOhojFKHHQvS5cKntsPvGcE-GY13VgvfiOeap1aQlXUt_xByAIg2--FZ11hOPrNoORAM68mBV43TRWz50NlFwQVO8wpr8zXbgEAqPUF085J8bMCy2HbKP8H4cQmR7tFbduIGL82W8V324wmjyahwRIa_uLLQarrgCOxZd_t48i5rGOBPf4yzEgjTSc5OELHdNqtK6Y0vv2a9HoGzX-vD586Q2OaWXjbV2vUhpaKcwp8UPvyXDFiqI0"/>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Justiça</span>
+<h3 class="font-newsreader text-2xl font-bold leading-snug hover:text-secondary transition-colors cursor-pointer">Reforma do Judiciário ganha fôlego entre parlamentares.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">As propostas visam dar mais celeridade aos processos e reduzir o custo operacional das cortes superiores.</p>
+<div class="pt-4 flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-slate-300"></div>
+<span class="text-[10px] font-bold text-primary italic uppercase tracking-tighter">Por Helena Marques</span>
+</div>
+</article>
+<!-- Local Item -->
+<article class="space-y-4">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="Modern urban skyline with clean streets and greenery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsn6O3AHznmBZ9xPW97vp7mnwlg6vDtr8kG45htzwdomzFfPs4lawGWhGVjiJpW2VyTHBJrk_eWf_fRs3n7WzWneMwtNb4985z-xzC1vV6iYzPgtUphY0TRZXPtkIOW2ak6oZ9h7I1Rq7qNhOr56U2FgzaHiHD9wEq6DBFlfrrIl2U_9BolZ-wu_VLdQuXfTbcNSInnECsFZCddxvXtI-lXKUBDwh1cl0TocK6PTCoMw73L9NJJxnIe6z76wYYaD71vpEY-PQkF4I"/>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Local</span>
+<h3 class="font-newsreader text-2xl font-bold leading-snug hover:text-secondary transition-colors cursor-pointer">Urbanismo: O novo plano diretor focado em mobilidade.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Prefeitura aposta em corredores exclusivos e incentivo ao transporte não poluente para os próximos dez anos.</p>
+<div class="pt-4 flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-slate-300"></div>
+<span class="text-[10px] font-bold text-primary italic uppercase tracking-tighter">Por Carlos Silva</span>
+</div>
+</article>
+<!-- Opinion Item -->
+<article class="space-y-4">
+<div class="aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
+<img class="w-full h-full object-cover hover:opacity-80 transition-opacity" data-alt="Newspaper texture background with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACnHJDtONzPbn6rtnsnP83tzWiE-_hqC7X6TN9yaiTh_7MjcwM20cS_H2PG1dKeYV7V4x3NMXw1XXkrbkT1eUl6ht449Ek7Ie7MHaJWhDuE7b7aM6rFHB5H01sxpqt8ZMmgS27XqJ7iI5VXWnjtvMUKJt3wRf5m6muxuqzvXDsUDG2I-6k8ubtmO6ENrMEj8a1ieP0o0C7DTPqeaul9wMakmwBH7NEBSVjLY3NTpmuGX_jTTIZ018glIj43f98S8_46smWboDqlEY"/>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-secondary">Opinião</span>
+<h3 class="font-newsreader text-2xl font-bold leading-snug hover:text-secondary transition-colors cursor-pointer">A Ética na Era da Inteligência Artificial Política.</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Um convite à reflexão sobre como os algoritmos estão moldando as percepções democráticas sem supervisão.</p>
+<div class="pt-4 flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-slate-300"></div>
+<span class="text-[10px] font-bold text-primary italic uppercase tracking-tighter">Por Prof. Dr. Mendes</span>
+</div>
+</article>
+</div>
+<!-- Signature Component: The Policy Pull-Quote -->
+<section class="py-20 flex flex-col items-center text-center bg-surface-container-highest rounded-sm px-8">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">format_quote</span>
+<blockquote class="headline-lg font-newsreader text-primary max-w-4xl text-3xl md:text-5xl leading-tight italic font-bold">
+                        "A autoridade não se impõe pelo grito, mas pela clareza dos fatos e a integridade das propostas."
+                    </blockquote>
+<div class="mt-10 flex flex-col items-center">
+<div class="h-1 w-12 bg-secondary mb-4"></div>
+<cite class="font-inter text-sm font-bold uppercase tracking-[0.2em] text-on-surface-variant not-italic">Manifesto Editorial 2024</cite>
+</div>
+</section>
+<!-- More News Asymmetric Grid -->
+<div class="flex flex-col md:flex-row gap-12">
+<div class="flex-1 space-y-8">
+<h2 class="font-newsreader text-4xl font-bold text-primary border-b border-primary pb-4">Análises de Impacto</h2>
+<div class="grid grid-cols-1 gap-12">
+<div class="flex gap-6 group cursor-pointer">
+<div class="w-1/3 aspect-[4/3] bg-surface-container-high shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Digital graphs showing economic data growth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJw5tQdzmS507nhOA4McOxZmfJdXppzGRdYwuvAM5VsYst9FcBB1kTri5DAXI6Ze5lnKWAQwWzdCEIYRjbEbG5VV5mcU3Rb-CjahhX8dj1uAMEfDL5eQvfcB5rP7hGFxT7q5G7aYY1WWTiGDmjsbt3dY0yHgGYh9iKsY--FEZfR_WTs3g-yaDy1BTYw0yeMs30MyWVATDAnV0JmNK-fK1jzFPOaKjzoiCUAKh8UbN-VUKCxnZeRFmodi3ftr0jdtHiULXfStqQtGI"/>
+</div>
+<div class="flex-1 space-y-2">
+<span class="text-[10px] font-bold text-primary-container">ECONOMIA</span>
+<h4 class="font-newsreader text-xl font-bold group-hover:text-secondary">Mercado projeta crescimento estável após novas medidas de ajuste fiscal.</h4>
+<p class="text-on-surface-variant text-sm line-clamp-2">Especialistas apontam que a previsibilidade é o fator chave para o retorno dos investimentos estrangeiros.</p>
+</div>
+</div>
+<div class="flex gap-6 group cursor-pointer">
+<div class="w-1/3 aspect-[4/3] bg-surface-container-high shrink-0 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Scientist in laboratory working with environmental samples" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ2qTFRxS2dJG5Ai5PR4CqOwzW9IEwu6M_nYYcpQu7VJ78RngxmjLUWTVOIrcVX7dU3iuyl0NMReiLF2JX6UKcrl93q0sIeOu_1jZx3Gv-iM-7xHq6EJjA8fsYnhzZieMhxliMibWaEHThHTdHXqcR26eUdmIW30e9dFNwGVEQkeyb3S65jbLLrLHcXAbSJpVCjNGHDJsOE6KNpbQjf5ngzaTKKpBTGe1d611P6EWzWz3rpOpwr34uEDqDu0sfrsm91dfJhQsnjXQ"/>
+</div>
+<div class="flex-1 space-y-2">
+<span class="text-[10px] font-bold text-primary-container">AMBIENTE</span>
+<h4 class="font-newsreader text-xl font-bold group-hover:text-secondary">Pacto Verde: Cidades do litoral unem-se contra o avanço das marés.</h4>
+<p class="text-on-surface-variant text-sm line-clamp-2">Protocolo de intenções visa criar infraestruturas resilientes e preservar ecossistemas marinhos.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Column inside Content -->
+<div class="w-full md:w-80 space-y-8">
+<div class="p-8 bg-primary text-white space-y-6">
+<h3 class="font-newsreader text-2xl italic font-bold">Participe do Fórum</h3>
+<p class="text-slate-300 text-sm leading-relaxed">Assine para ter acesso a comentários exclusivos e debates com nossos editores chefes.</p>
+<button class="w-full bg-secondary text-white py-3 font-bold text-xs uppercase tracking-widest hover:bg-red-700 transition-colors">Assinar Agora</button>
+</div>
+<div class="border-t-4 border-primary pt-6">
+<h4 class="font-inter font-bold text-xs uppercase tracking-widest mb-6">Mais Lidas</h4>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="text-3xl font-newsreader font-bold text-outline-variant italic shrink-0">01</span>
+<p class="text-sm font-bold leading-tight hover:text-secondary cursor-pointer">As novas regras para as eleições municipais explicadas.</p>
+</div>
+<div class="flex gap-4">
+<span class="text-3xl font-newsreader font-bold text-outline-variant italic shrink-0">02</span>
+<p class="text-sm font-bold leading-tight hover:text-secondary cursor-pointer">Dólar fecha em queda após pronunciamento do FED.</p>
+</div>
+<div class="flex gap-4">
+<span class="text-3xl font-newsreader font-bold text-outline-variant italic shrink-0">03</span>
+<p class="text-sm font-bold leading-tight hover:text-secondary cursor-pointer">Infraestrutura: Obras na BR-101 devem ser entregues em Junho.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Footer Component -->
+<footer class="w-full pt-16 pb-8 bg-blue-950 dark:bg-black text-white">
+<div class="w-full px-8 grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<a class="font-newsreader text-3xl text-white font-bold italic" href="#">David Ribeiro</a>
+<p class="font-inter text-slate-400 text-sm leading-relaxed">Informação com autoridade, independência e o compromisso inabalável com a verdade institucional.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-inter text-xs uppercase tracking-widest font-bold text-red-500">Links Rápidos</h4>
+<ul class="space-y-3">
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Privacidade</a></li>
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Termos</a></li>
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Newsletter</a></li>
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Contato</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-inter text-xs uppercase tracking-widest font-bold text-red-500">Editoriais</h4>
+<ul class="space-y-3">
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Política Nacional</a></li>
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Economia</a></li>
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Opinião</a></li>
+<li><a class="font-inter text-xs uppercase tracking-widest text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Internacional</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-inter text-xs uppercase tracking-widest font-bold text-red-500">Siga-nos</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-white hover:text-blue-950 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-white hover:text-blue-950 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">forum</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-white hover:text-blue-950 transition-all" href="#">
+<span class="material-symbols-outlined text-sm">campaign</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-800">
+<p class="font-inter text-xs uppercase tracking-widest text-slate-400 text-center">© 2026 David Ribeiro. Todos os direitos reservados.</p>
+</div>
+</footer>
+</body></html>
